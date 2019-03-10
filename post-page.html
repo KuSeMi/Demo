@@ -19,7 +19,7 @@
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
       <div class="container">
-        <a href="#" class="navbar-brand waves-effect">
+        <a href="index.html" class="navbar-brand waves-effect">
           <strong class="blue-text">
             DemoBlog
           </strong>
@@ -33,16 +33,16 @@
         <div id="nav-content" class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a href="#" class="nav-link waves-effect">Home</a>
+              <a href="index.html" class="nav-link waves-effect">Home</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link waves-effect">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link waves-effect">Posts</a>
+              <a href="#post" class="nav-link waves-effect">Posts</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link waves-effect">Contacts</a>
+              <a href="#contacts" class="nav-link waves-effect">Contacts</a>
             </li>
           </ul>
 
@@ -73,10 +73,10 @@
       <section class="mt-4">
         <div class="row">
           <div class="col-md-8 mb-4">
-            <div class="card mb-4 wow fadeIn">
+            <div class="card mb-4 wow fadeInUpBig">
               <img src="https://www.aress.com/assets/images/ror_benefits.jpg" alt="benefits" class="img-fluid">
             </div>
-            <div class="card mb-4 wow fadeIn">
+            <div id="post" class="card mb-4 wow fadeInLeft">
               <div class="card-body">
                 <p class="h5 my-4">A perfect framework that can drastically shorten the development time.</p>
 
@@ -91,7 +91,7 @@
               </div>
             </div>
 
-            <div class="card mb-4 wow fadeIn">
+            <div class="card mb-4 wow fadeInBig">
               <div class="card-header font-weight-bold">
                 <span>About author:</span>
                 <span class="pull-right">
@@ -127,6 +127,7 @@
                     <p>"Thanks for the great service. Ruby on Rails has completely surpassed our expectations. I STRONGLY recommend Ruby on Rails to EVERYONE interested in running a successful online business!"</p>
                   </div>
                 </div>
+
                 <div class="media d-block d-md-flex mt-4">
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg" alt="ava" class="d-flex mb-3 mx-auto">
                   <div class="mdeia-body text-center text-md-left ml-md-3  ml-0">
@@ -138,6 +139,7 @@
                     <p>"I am completely blown away. Ruby on Rails impressed me on multiple levels."</p>
                   </div>
                 </div>
+
                 <div class="media d-block d-md-flex mt-4">
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img (5).jpg" alt="ava" class="d-flex mb-3 mx-auto">
                   <div class="mdeia-body text-center text-md-left ml-md-3  ml-0">
@@ -149,6 +151,7 @@
                     <p>"I am completely blown away. It's really wonderful. Thank you so much for your help. Needless to say we are extremely satisfied with the results."</p>
                   </div>
                 </div>
+
                 <div class="card-header">
                   <div class="card-body form-group mt-4">
                     <form action="#">
@@ -162,6 +165,7 @@
                       <label for="#"> Your e-mail</label>
                       <input type="email" class="form-control">
                     </form>
+
                     <div class="text-center">
                       <button class="btn btn-info btn-sm">Add comment</button>
                     </div>
@@ -170,12 +174,47 @@
               </div>
             </div>
           </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card peach-gradient mb-4 wow fadeInRightBig">
+              <div class="card-body text-white text-center">
+                <h4 class="mb-4">Demo Blog</h4>
+                <p>
+                  <strong>The Complete Ruby on Rails Developer Course</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>Learn to make innovative web apps with Ruby on Rails and unleash your creativity</strong>
+                </p>
+                <a href="https://goodprogrammer.ru/" class="btn btn-outline-white btn-md">
+                  <strong>Start</strong> <i class="fa fa-graduation-cap ml-3"></i>
+                </a>
+              </div>
+            </div>
+            <div id="contacts" class="card mb-4 text-center wow fadeInUp">
+              <div class="card-header">Contacts</div>
+              <div class="card-body">
+                <form action="#">
+                  <label for="#" class="grey-text">Your Email</label>
+                  <input type="email" class="form-control">
+                  <br>
+                  <label for="#" class="grey-text">Your Name</label>
+                  <input type="text" class="form-control">
+                  <div class="text-center mt-4">
+                    <button class="btn btn-info btn-md">
+                      Get lessons
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </div>
   </main>
 
-  <footer class="page-footer text-center font-small mdb-color darken-2 mt-2 mt-4 wow fadeIn">
+  <footer class="page-footer text-center font-small mdb-color darken-2 mt-2 mt-4 wow fadeInLeft">
     <div class="pt-4">
       <a href="https://rubyinstaller.org/" class="btn btn-outline-white">Ruby <i class="fa fa-download"></i></a>
       <a href="https://rubyonrails.org/" class="btn btn-outline-white">Rails <i class="fa fa-graduation-cap"></i></a>
@@ -201,4 +240,7 @@
   <script type="text/javascript" src="js/mdb.js"></script>
 </body>
 
+<script>
+    new WOW().init();
+</script>
 </html>

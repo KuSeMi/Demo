@@ -36,13 +36,13 @@
               <a href="#" class="nav-link waves-effect">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link waves-effect">Blog</a>
+              <a href="post-page.html" class="nav-link waves-effect">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link waves-effect">Posts</a>
+              <a href="post-page.html#post" class="nav-link waves-effect">Posts</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link waves-effect">Contacts</a>
+              <a href="post-page.html#contacts" class="nav-link waves-effect">Contacts</a>
             </li>
           </ul>
 
@@ -70,7 +70,7 @@
 
 <main class="mt-5 pt-5">
   <div class="container">
-    <section class="card wow fadeIn" style="background-image: url(https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+    <section class="card wow fadeInDown" style="background-image: url(https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
         <div class="card-body text-white text-center py-5 px-5 my-5">
           <h1 class="mb-4">
             <strong>Learn Ruby on Rails</strong>
@@ -85,7 +85,7 @@
 
     <hr class="my-5">
 
-    <section class="wow fadeIn">
+    <section class="wow fadeInLeft">
       <h2 class="h1 text-center my-5 font-weight-bolt">
           WHAT YOU'LL CREATE
       </h2>
@@ -151,7 +151,7 @@
   </div>
 </main>
 
-<footer class="page-footer text-center font-small mdb-color darken-2 mt-2 mt-4 wow fadeIn">
+<footer class="page-footer text-center font-small mdb-color darken-2 mt-2 mt-4 wow fadeInRight">
   <div class="pt-4">
     <a href="https://rubyinstaller.org/" class="btn btn-outline-white">Ruby <i class="fa fa-download"></i></a>
     <a href="https://rubyonrails.org/" class="btn btn-outline-white">Rails <i class="fa fa-graduation-cap"></i></a>
@@ -177,6 +177,10 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
